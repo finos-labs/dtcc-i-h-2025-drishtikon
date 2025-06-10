@@ -9,6 +9,7 @@ dependencies = [
     "fastapi>=0.115.12",
     "logfire>=3.18.0",
     "matplotlib>=3.10.3",
+    "mcp>=1.9.3",
     "numpy>=2.3.0",
     "pandas>=2.3.0",
     "pydantic>=2.11.5",
