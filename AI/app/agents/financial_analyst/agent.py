@@ -9,7 +9,7 @@ import os
 
 from pydantic_ai import Agent
 
-from app.utils import model, MCPClient
+from app.utils import model, MCPClient, FINANCIAL_ANALYST_SYSTEM_PROMPT
 
 # Get the directory where the current script is located
 SCRIPT_DIR = pathlib.Path(__file__).parent.resolve()
@@ -18,15 +18,24 @@ CONFIG_FILE = SCRIPT_DIR / "mcp_config.json"
 
 load_dotenv()
 
-async def get_pydantic_ai_agent():
+async def get_financial_analyst():
     client = MCPClient()
     client.load_servers(str(CONFIG_FILE))
     tools = await client.start()
+
     i = 1
     for tool in tools:
         print(f"{i}. {tool.name}: {tool.description}")
         i += 1
-    return client, Agent(model=model, tools=tools)
+
+    agent = Agent(
+        model = model,
+        system_prompt = FINANCIAL_ANALYST_SYSTEM_PROMPT,
+        tools = tools,
+        retries=2
+    )
+
+    return client, agent
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -35,13 +44,14 @@ async def get_pydantic_ai_agent():
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 async def main():
-    print("=== Pydantic AI MCP CLI Chat ===")
+    print("=== Zerodha CLI Chat ===")
     print("Type 'exit' to quit the chat")
     
     # Initialize the agent and message history
-    mcp_client, mcp_agent = await get_pydantic_ai_agent()
+    mcp_client, mcp_agent = await get_financial_analyst()
     console = Console()
     messages = []
+    return
     
     try:
         while True:
