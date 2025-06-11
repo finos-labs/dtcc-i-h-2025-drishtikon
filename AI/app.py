@@ -7,7 +7,7 @@ import traceback
 
 sys.path.append(str(pathlib.Path(__file__).parent / "app"))
 
-from app.agents.zerodha_agent.agent import get_zerodha_agent
+from app.agents.zerodha_agent.agent import mcp_client, mcp_agent
 
 st.set_page_config(
     page_title="AI Chatbot",
@@ -57,10 +57,10 @@ if "agent_initialized" not in st.session_state:
     st.session_state.agent_initialized = False
 
 if "mcp_client" not in st.session_state:
-    st.session_state.mcp_client = None
+    st.session_state.mcp_client = mcp_client
 
 if "mcp_agent" not in st.session_state:
-    st.session_state.mcp_agent = None
+    st.session_state.mcp_agent = mcp_agent
 
 if "available_tools" not in st.session_state:
     st.session_state.available_tools = []
@@ -69,7 +69,7 @@ async def initialize_agent():
     """Initialize the Pydantic AI agent asynchronously"""
     try:
         with st.spinner("Initializing AI agent and tools..."):
-            mcp_client, mcp_agent = await get_zerodha_agent()
+            # mcp_client, mcp_agent = await get_zerodha_agent()
             
             # Store in session state
             st.session_state.mcp_client = mcp_client
@@ -181,7 +181,7 @@ if st.session_state.agent_initialized:
             st.markdown(user_input)
         
         # Get agent response
-        with st.chat_message("assistant"):
+        with st.chat_message("ass-istant"):
             with st.spinner("Thinking..."):
                 try:
                     # Extract message history for the agent
