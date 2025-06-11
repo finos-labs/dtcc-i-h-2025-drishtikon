@@ -118,6 +118,9 @@ graph TD
 
 ### 🔄 Workflow Architecture
 
+![Workflow Architecture](https://github.com/user-attachments/assets/97b6f2a3-5c2a-4f0f-bd2b-14d18af3c040)
+
+
 ## 🛠️ Technology Stack
 
 <div align="center">
@@ -260,13 +263,13 @@ with P&L breakdown"
 
 ## 🎨 Screenshots
 
-<div align="center">
+![Dashboard](https://github.com/user-attachments/assets/b1689a5a-24c8-4eb6-9e97-25235fd9a74b)
 
-| Dashboard | Portfolio Analysis | Trade Execution |
-|-----------|-------------------|-----------------|
-| ![Dashboard](https://via.placeholder.com/300x200/4285F4/FFFFFF?text=Dashboard) | ![Analysis](https://via.placeholder.com/300x200/34A853/FFFFFF?text=Analysis) | ![Trading](https://via.placeholder.com/300x200/EA4335/FFFFFF?text=Trading) |
+![Thinking](https://github.com/user-attachments/assets/422f94e9-1d39-42f7-9f52-ed1b9cf27b74)
 
-</div>
+![Response](https://github.com/user-attachments/assets/e8dad51b-4007-4f3d-b1f9-edd5a3766832)
+
+![buying stock](https://github.com/user-attachments/assets/7fafb759-3d2b-44d5-95b0-920324050805)
 
 ---
 
