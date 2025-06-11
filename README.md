@@ -122,19 +122,17 @@ graph TD
 
 <div align="center">
 
-### **Backend Infrastructure**
+### **Agentic AI Infrastructure**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic_AI-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3A3A?style=for-the-badge&logo=langchain&logoColor=white)
-
-### **AI & ML**
 ![Claude](https://img.shields.io/badge/Claude-000000?style=for-the-badge&logo=anthropic&logoColor=white)
 ![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP_Protocol-4A90E2?style=for-the-badge&logo=protocol&logoColor=white)
 
 ### **Frontend & UI**
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ### **Data & APIs**
@@ -150,7 +148,7 @@ graph TD
 
 ### 📋 Prerequisites
 
-- **Python 3.9+** 🐍
+- **Python 3.11+** 🐍
 - **Git** 📚
 - **AWS Bedrock Access** ☁️
 - **SupaBase Account** 🗄️
