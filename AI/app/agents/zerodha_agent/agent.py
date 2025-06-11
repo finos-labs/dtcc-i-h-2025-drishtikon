@@ -23,10 +23,10 @@ async def get_zerodha_agent():
     client.load_servers(str(CONFIG_FILE))
     tools = await client.start()
 
-    # i = 1
-    # for tool in tools:
-    #     print(f"{i}. {tool.name}: {tool.description}")
-    #     i += 1
+    i = 1
+    for tool in tools:
+        print(f"{i}. {tool.name}: {tool.description}")
+        i += 1
 
     agent = Agent(
         model = model,
