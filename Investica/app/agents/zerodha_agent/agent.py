@@ -31,7 +31,7 @@ async def get_zerodha_agent():
     agent = Agent(
         model = model,
         system_prompt = ZERODHA_AGENT_SYSTEM_PROMPT,
-        tools = tools,
+        # tools = tools,
         retries=2
     )
 

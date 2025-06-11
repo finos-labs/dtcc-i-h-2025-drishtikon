@@ -27,7 +27,7 @@ if sys.platform.startswith('win'):
 from graph import agentic_flow
 
 st.set_page_config(
-    page_title="AI Chatbot",
+    page_title="Investica",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -164,7 +164,7 @@ async def get_agentic_response(user_input: str, thread_id: str):
 
 # UI Components
 with st.sidebar:
-    st.title("🤖 AI Chatbot")
+    st.title("🤖 Investica")
     st.markdown("---")
     
     # Show thread ID for debugging
@@ -192,7 +192,7 @@ with st.sidebar:
     st.subheader("Status")
     st.success("🟢 Agentic Flow Ready")
 
-st.title("AI Assistant Chat")
+st.title("Investica")
 
 # Chat interface
 chat_container = st.container()

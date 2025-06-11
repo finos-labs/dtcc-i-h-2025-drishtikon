@@ -13,10 +13,12 @@ if missing_vars:
     raise ValueError(f"Missing required environment variables: {', '.join(missing_vars)}")
 
 bedrock_client = boto3.client('bedrock-runtime', region_name='us-west-2')
-model = BedrockConverseModel(
-    # "us.anthropic.claude-sonnet-4-20250514-v1:0",
-    # "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
-    # "arn:aws:bedrock:us-west-2:100098606670:inference-profile/us.anthropic.claude-sonnet-4-20250514-v1:0",
-    "arn:aws:bedrock:us-west-2:100098606670:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0",
-    provider=BedrockProvider(bedrock_client=bedrock_client),
-)
+# model = BedrockConverseModel(
+#     # "us.anthropic.claude-sonnet-4-20250514-v1:0",
+#     # "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+#     "arn:aws:bedrock:us-west-2:100098606670:inference-profile/us.anthropic.claude-sonnet-4-20250514-v1:0",
+#     # "arn:aws:bedrock:us-west-2:100098606670:inference-profile/us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+#     provider=BedrockProvider(bedrock_client=bedrock_client),
+# )
+
+model="openai:gpt-4o-mini"
