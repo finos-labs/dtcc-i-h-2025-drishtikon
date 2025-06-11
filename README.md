@@ -1,19 +1,3 @@
-![badge-labs](https://user-images.githubusercontent.com/327285/230928932-7c75f8ed-e57b-41db-9fb7-a292a13a1e58.svg)
-
-# DTCC AI Hackathon 2025: Empowering India's Innovators
-The purpose of hackathon is to leverage AI and ML Technologies to address critical challenges in the financial markets. The overall goal is to progress industry through Innovation, Networking and by providing effective Solutions.
-
-**Hackathon Key Dates** 
-•	June 6th - Event invites will be sent to participants
-•	June 9th - Hackathon Open
-•	June 9th-11th - Team collaboration and Use Case development
-•	June 12th - Team presentations & demos
-•	June 16th - Winners Announcement
-
-More Info - https://communications.dtcc.com/dtcc-ai-hackathon-registration-17810.html
-
-Commit Early & Commit Often!!!
-
 # 🚀 Investica
 ### *AI-Powered Financial Assistant for Next-Gen Trading*
 
@@ -24,8 +8,6 @@ Commit Early & Commit Often!!!
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
 
 **Revolutionizing portfolio management through intelligent AI agents**
-
-[🎯 Live Demo](#-demo) • [📖 Documentation](#-table-of-contents) • [🛠️ Setup](#-quick-start) • [🤝 Contribute](#-contributing)
 
 </div>
 
@@ -169,15 +151,15 @@ graph TD
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/investica.git
-   cd investica
+   git clone https://github.com/finos-labs/dtcc-i-h-2025-drishtikon.git
+   cd dtcc-i-h-2025-drishtikon
    ```
 
 2. **Set up virtual environment**
    ```bash
-   python -m venv venv
+   uv venv
    source venv/bin/activate  # Windows: venv\Scripts\activate
-   pip install -r requirements.txt
+   uv sync
    ```
 
 3. **Configure environment variables**
@@ -188,7 +170,7 @@ graph TD
 
 4. **Launch the application**
    ```bash
-   streamlit run app/main.py
+   streamlit run app.py
    ```
 
 5. **Access your dashboard**
@@ -272,93 +254,6 @@ with P&L breakdown"
 ![buying stock](https://github.com/user-attachments/assets/7fafb759-3d2b-44d5-95b0-920324050805)
 
 ---
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### 🌟 Ways to Contribute
-
-<table>
-<tr>
-<td width="25%">
-
-**🐛 Bug Reports**
-- Found an issue?
-- Submit detailed reports
-- Help us improve!
-
-</td>
-<td width="25%">
-
-**✨ Feature Requests**
-- Have ideas?
-- Share your vision
-- Shape the future!
-
-</td>
-<td width="25%">
-
-**💻 Code Contributions**
-- Fork & PR
-- Follow guidelines
-- Build together!
-
-</td>
-<td width="25%">
-
-**📖 Documentation**
-- Improve docs
-- Add examples
-- Help others learn!
-
-</td>
-</tr>
-</table>
-
-### 🔄 Development Workflow
-
-1. **Fork** the repository
-2. **Create** feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to branch (`git push origin feature/amazing-feature`)
-5. **Open** Pull Request
-
-### 📋 Code Standards
-
-- ✅ Follow **PEP 8** style guidelines
-- ✅ Add **comprehensive tests**
-- ✅ Update **documentation**
-- ✅ Use **meaningful commit messages**
-
----
-
-## 📊 Project Stats
-
-<div align="center">
-
-![GitHub stars](https://img.shields.io/github/stars/your-username/investica?style=social)
-![GitHub forks](https://img.shields.io/github/forks/your-username/investica?style=social)
-![GitHub issues](https://img.shields.io/github/issues/your-username/investica)
-![GitHub PRs](https://img.shields.io/github/issues-pr/your-username/investica)
-
-</div>
-
----
-
-## 🏆 Achievements
-
-<div align="center">
-
-🥇 **DTCC i-Hack 2025 - Drishtikon Finalist**  
-🚀 **Most Innovative AI Solution**  
-⭐ **Best User Experience Design**  
-💡 **Outstanding Technical Implementation**
-
-</div>
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -392,42 +287,12 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 </div>
 
-### Project Details
+## Team Information
 
+### Team Name - Drishtikon
 
-### Team Information
-
-
-## Using DCO to sign your commits
-
-**All commits** must be signed with a DCO signature to avoid being flagged by the DCO Bot. This means that your commit log message must contain a line that looks like the following one, with your actual name and email address:
-
-```
-Signed-off-by: John Doe <john.doe@example.com>
-```
-
-Adding the `-s` flag to your `git commit` will add that line automatically. You can also add it manually as part of your commit log message or add it afterwards with `git commit --amend -s`.
-
-See [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for more information
-
-### Helpful DCO Resources
-- [Git Tools - Signing Your Work](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
-- [Signing commits
-](https://docs.github.com/en/github/authenticating-to-github/signing-commits)
-
-
-## License
-
-Copyright 2025 FINOS
-
-Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
-
-
-
-
-
-
-
-
+### Team Members
+* Jayesh Sawaliya
+* Vaishnavi Mendhane
+* Luv Kansal
+* Kunj Vipul Goyal
